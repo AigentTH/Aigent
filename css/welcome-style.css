@@ -400,8 +400,7 @@ footer {
     display: flex;
     justify-content: space-around;
     color: white;
-    background-color: rgba(255, 255, 255, 0.144);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(1px);
     margin-right: 5%;
 }
 
@@ -528,11 +527,15 @@ footer {
         margin-right: auto;
     }
     .join {
-        float: none;
         margin-top: 150px;
     }
     .btn-discord {
-        margin: auto;
+        width: auto;
+        border-radius: 10px;
+        padding: 13px;
+        margin-right: 10px;
+    }
+    .btn-discord-txt {
         display: none;
     }
     .diss-none {
