@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.phone {
+    width: 100%;
+    overflow: scroll;
+}
+
+.phone-img {
+    width: 3000px;
+    justify-content: space-around;
+}
+
+.phone-img img {
+    width: 500px;
+}
