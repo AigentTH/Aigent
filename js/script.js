@@ -22,6 +22,14 @@ function signin() {
     window.open("https://app.aigentcorporation.com/signin");
 }
 
+function Pivacy() {
+    window.open("https://app.aigentcorporation.com/privacy");
+}
+
+function Terms() {
+    window.open("https://app.aigentcorporation.com/general");
+}
+
 function video() {
     const videos = document.getElementById("videos");
     videos.style.display = "flex";

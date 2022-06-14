@@ -5,20 +5,31 @@
     --icon-box-color: #ffffff33;
     --head-text-color: #fff;
     --subtext-color: #C0C0C0;
+    --sait: env(safe-area-inset-top);
+    --saib: env(safe-area-inset-top);
+    --sail: env(safe-area-inset-top);
+    --sair: env(safe-area-inset-top);
+}
+
+html {
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 body {
     font-family: var(--main-font);
     background: var(--main-color);
     margin: 0;
-    padding: 0;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 a {
     text-decoration: none;
 }
 
-nav {
+.navs {
     width: 100%;
     position: absolute;
     display: flex;
@@ -109,10 +120,17 @@ nav i {
 }
 
 .who-in-txt {
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.who-txt-2 {
+    margin: 30px 10px;
     background: -webkit-linear-gradient(0, #FD5F6A, #A33DC2, #54309B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 19px;
 }
 
 .menubar {
@@ -249,7 +267,6 @@ h1 {
     color: white;
     width: 80%;
     margin: auto;
-    text-align: center;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -257,10 +274,11 @@ h1 {
 }
 
 .who-txt div {
-    margin: 30px 50px;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
+}
+
+.footer-logo {
+    margin: auto;
 }
 
 .condition {
@@ -322,6 +340,10 @@ h1 {
     margin: 70px auto 0;
 }
 
+.ml-20 {
+    text-align: center;
+}
+
 .phone-img {
     display: flex;
     flex-wrap: wrap;
@@ -352,7 +374,7 @@ h1 {
     justify-content: space-around;
 }
 
-.phone h1 {
+.join_to_free h1 {
     font-size: 60px;
     letter-spacing: 10px;
     background: -webkit-linear-gradient(-90deg, #FD5F6A, #461e94);
@@ -384,13 +406,13 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    text-align: center;
 }
 
 .footer-txt {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #c0c0c06b;
-    text-align: center;
+    font-weight: 200;
+    padding: 10px 0;
 }
 
 .footer-txt a {
@@ -407,10 +429,6 @@ footer {
     color: white;
     font-weight: 200;
     margin: 10px 0;
-}
-
-.footer-txt {
-    font-weight: 200;
 }
 
 .in-email {
@@ -435,13 +453,9 @@ footer {
     color: white;
 }
 
-.footer-txt {
-    padding: 10px 0;
-}
-
 .footer-img {
     margin: 40px 0;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -533,6 +547,11 @@ footer {
     margin: 0 5px;
     border-radius: 10px;
     backdrop-filter: blur(2px);
+    transition: all 0.3s;
+}
+
+.icon-btn:hover {
+    box-shadow: 0 0 10px 1px #ffffff;
 }
 
 .join_to_free {
@@ -626,6 +645,9 @@ footer {
     }
     .icon-social {
         display: none;
+    }
+    .who-in-txt {
+        width: 100%;
     }
 }
 
@@ -898,6 +920,9 @@ footer {
     }
     .download img {
         margin: 15px auto;
+    }
+    .footer-img {
+        width: 50%;
     }
 }
 
