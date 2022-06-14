@@ -1,28 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
-    --main-font: 'Poppins', sans-serif;
+    --main-font: 'Poppins', Prompt;
     --main-color: #1D1C27;
     --icon-box-color: #ffffff33;
     --head-text-color: #fff;
     --subtext-color: #C0C0C0;
-    --sait: env(safe-area-inset-top);
-    --saib: env(safe-area-inset-top);
-    --sail: env(safe-area-inset-top);
-    --sair: env(safe-area-inset-top);
 }
 
-html {
+* {
+    font-family: var(--main-font);
+}
+
+body {
+    background: var(--main-color);
+    margin: 0;
     padding-top: env(safe-area-inset-top);
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
     padding-bottom: env(safe-area-inset-bottom);
-}
-
-body {
-    font-family: var(--main-font);
-    background: var(--main-color);
-    margin: 0;
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 a {
@@ -59,6 +55,7 @@ a {
     display: none;
     cursor: pointer;
     z-index: 10;
+    color: transparent;
 }
 
 .menu-icon img {
@@ -71,8 +68,14 @@ nav i {
 }
 
 .menu-drop {
+    display: flex;
     width: 100%;
     padding: 20px;
+    color: white;
+}
+
+.lang a {
+    margin: 0 15px;
 }
 
 .menubar a {
@@ -120,10 +123,10 @@ nav i {
 }
 
 .who-in-txt {
-    width: 50%;
+    width: 100%;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .who-txt-2 {
@@ -131,6 +134,12 @@ nav i {
     background: -webkit-linear-gradient(0, #FD5F6A, #A33DC2, #54309B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.who-list {
+    width: 40%;
+    margin: auto;
+    text-align: left;
 }
 
 .menubar {
@@ -271,6 +280,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
 }
 
 .who-txt div {
@@ -376,7 +386,6 @@ h1 {
 
 .join_to_free h1 {
     font-size: 60px;
-    letter-spacing: 10px;
     background: -webkit-linear-gradient(-90deg, #FD5F6A, #461e94);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -647,6 +656,13 @@ footer {
         display: none;
     }
     .who-in-txt {
+        margin: auto;
+    }
+    .menu-icon {
+        font-size: 2rem;
+        color: white;
+    }
+    .who-list {
         width: 100%;
     }
 }
@@ -675,10 +691,6 @@ footer {
     .logo {
         width: 120px;
         margin: auto;
-    }
-    .menu-icon {
-        font-size: 2rem;
-        color: white;
     }
     .menubar {
         width: 100%;
