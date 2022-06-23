@@ -20,7 +20,15 @@
         </div>
 
         <div class="icon-social">
-            <button onclick="discord()" class="icon-btn"><img src="../image/discord-icon.png" alt=""></button>
+            <div class="top-link">
+                <a onclick="signin()">Sing in</a>
+                <a onclick="signup()">Become a Partner</a>
+                <div class="lang">
+                    <a>EN</a> | <a href="../th/index.html">TH</a>
+                </div>
+            </div>
+
+            <button onclick="line()" class="icon-btn btn-line"><img src="../image/line.png" alt=""></button>
             <button onclick="fb()" class="icon-btn"><img src="../image/001-facebook.png" alt=""></button>
             <button onclick="tw()" class="icon-btn"><img src="../image/003-twitter.png" alt=""></button>
             <button onclick="inst()" class="icon-btn"><img src="../image/004-instagram.png" alt=""></button>
@@ -33,10 +41,7 @@
             <a onclick="closeVideo()">X</a>
         </div>
 
-        <video controls>
-            <source src="../video/FINAL + SFX.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-        </video>
+        <iframe src="https://www.youtube.com/embed/d8XowyuMmNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="menubar" id="menubar">
         <div class="menu-drop">
@@ -60,12 +65,12 @@
 
     <div class="contain-bg">
         <img src="../image/Rectangle12-re.png" class="welcome-img-bg-1" alt="">
-        <div class="join diss-on">
+        <!-- <div class="join diss-on">
             <div onclick="discord()" class="btn-discord diss-on">
                 <img src="../image/Group 512721.png" class="img-disc-btn" alt="">
                 <div class="btn-discord-txt">Join Our Discord</div>
             </div>
-        </div>
+        </div> -->
         <div class="contain con-absolute">
             <div class="dissplay" id="dissplay">
                 <div class="con-open">
@@ -118,8 +123,6 @@
         </div>
         <div class="who-txt ">
             <div class="who-list">
-
-
                 <div class="who-in-txt">
                     <img src="../image/Vector 124.png" alt="">
                     <div class="who-txt-2"> increase liquidtity cash flow.</div>
@@ -128,6 +131,8 @@
                     <img src="../image/Vector 124.png" alt="">
                     <div class="who-txt-2"> Automatically operating system like OTA.</div>
                 </div>
+            </div>
+            <div class="who-list">
                 <div class="who-in-txt">
                     <img src="../image/Vector 124.png" alt="">
                     <div class="who-txt-2"> Zero comisstion with out marching fee.</div>
@@ -137,6 +142,8 @@
                     <div class="who-txt-2"> DIY create e voucher price with flexible plan.</div>
                 </div>
             </div>
+
+
 
 
         </div>
@@ -149,8 +156,8 @@
             <br>for partner
         </div>
         <div class="condition-txt">
-            Provide 50% discount the standard voucher price <br> for at least 1 Aigent Member Club room/day, <br> but not more than 3,000 baht per night. <br>
-            <br> (hotel can set maximum room per night) <br><br>
+            Provide 50% discount (Max3,000 baht) per voucher<br> on the instant selling rate for Aigent Member Club <br> at least 5 Vouchers /month only.<br>
+            <br> ( The maximum vouchers of sell is limited by hotel )<br><br>
             <span>Note : Guest's booking & stay is according to hotel's conditions.</span>
 
         </div>
@@ -171,10 +178,9 @@
             </div>
             <div class="phone-img">
                 <div class="phone-txt">
-                    <b>Buy Now</b>
+                    <b>Team Purchase</b>
                     <br>
-                    <span>Hotel can set the best deal voucher
-                    for early booker.</span>
+                    <span>Boost your revenue with multi order in one time.</span>
                 </div>
                 <img src="../image/phone-2.png" class="phone-cap" alt="">
             </div>
@@ -212,7 +218,7 @@
     <div class="join_to_free">
         <h1>FREE TO JOIN</h1>
         <div class="join-txt">
-            Aigent platform today commission fee & merchant fee.
+            With Aigent platform today. No commission fee & No merchant fee
         </div>
         <div class="join-btn">
             <button onclick="signup()" class="linear-btn con-btn">Partner with us</button>
@@ -256,13 +262,10 @@
             </div>
         </div>
         <div class="footer-txt ml-20">
-            @ 2022 Aigent Corporation Limited. All Right Reserved <br>
+            @ 2020 Aigent Corporation Limited. All Right Reserved <br>
             <a onclick="Pivacy()" class="pointer"> Pivacy Policy</a> |
             <a onclick="Terms()" class="pointer">Terms & Conditions</a>
         </div>
-
-
-
     </footer>
 
 </body>

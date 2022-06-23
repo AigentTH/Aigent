@@ -9,6 +9,7 @@
     <link rel=" stylesheet" href="../css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../image/favicon.png">
+    <link rel="stylesheet" href="../css/index-th.css">
     <title>Welcome to the Aigent</title>
 </head>
 
@@ -20,7 +21,14 @@
         </div>
 
         <div class="icon-social">
-            <button onclick="discord()" class="icon-btn"><img src="../image/discord-icon.png" alt=""></button>
+            <div class="top-link">
+                <a onclick="signin()">เข้าสู่ระบบ</a>
+                <a onclick="signup()">ร่วมเป็นพันธมิตร</a>
+                <div class="lang">
+                    <a href="../en/index.html">EN</a> | <a>TH</a>
+                </div>
+            </div>
+            <button onclick="line()" class="icon-btn btn-line"><img src="../image/line.png" alt=""></button>
             <button onclick="fb()" class="icon-btn"><img src="../image/001-facebook.png" alt=""></button>
             <button onclick="tw()" class="icon-btn"><img src="../image/003-twitter.png" alt=""></button>
             <button onclick="inst()" class="icon-btn"><img src="../image/004-instagram.png" alt=""></button>
@@ -33,10 +41,7 @@
             <a onclick="closeVideo()">X</a>
         </div>
 
-        <video controls>
-            <source src="../video/FINAL + SFX.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-        </video>
+        <iframe src="https://www.youtube.com/embed/d8XowyuMmNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="menubar" id="menubar">
         <div class="menu-drop">
@@ -60,12 +65,6 @@
 
     <div class="contain-bg">
         <img src="../image/Rectangle12-re.png" class="welcome-img-bg-1" alt="">
-        <div class="join diss-on">
-            <div onclick="discord()" class="btn-discord diss-on">
-                <img src="../image/Group 512721.png" class="img-disc-btn" alt="">
-                <div class="btn-discord-txt">เข้าร่วม Discord</div>
-            </div>
-        </div>
         <div class="contain con-absolute">
             <div class="dissplay" id="dissplay">
                 <div class="con-open">
@@ -76,7 +75,7 @@
                         ยินดีต้อนรับสู่ <br><b>Aigent Club</b>
                     </div>
                     <div class="wel-txt">
-                        เราเป็นเครื่องมือในการจองห้องพักที่ซึ่งโรงแรมสามารถเชื่อมต่อ กับนักท่องเที่ยวได้โดยตรงผ่านเทคโนโลยีบล็อคเชน
+                        เราเป็นเครื่องมือในการจองห้องพักที่ซึ่งโรงแรมสามารถเชื่อมต่อ <br> กับนักท่องเที่ยวได้โดยตรงผ่านเทคโนโลยีบล็อคเชน
 
 
                     </div>
@@ -122,31 +121,29 @@
         </div>
         <div class="who-txt">
             <div class="who-list">
-
-
                 <div class="who-in-txt">
                     <img src="../image/Vector 124.png" alt="">
-                    <div class="who-txt-2"> ขายแพ็คเกจเวาเชอร์ที่พัก บนแพลตฟอร์ม Mobile App. ที่มีผู้ใช้งานกว่า 1 ล้านคน</div>
+                    <div class="who-txt-2">เพิ่มสภาพคล่องกระแสเงินสดทันที่เมื่อมีการสั่งซื้อเวาเชอร์</div>
                 </div>
                 <div class="who-in-txt">
                     <img src="../image/Vector 124.png" alt="">
-                    <div class="who-txt-2"> เดือนกรกฏาคม 2565 พร้อมเปิดให้นักท่องเที่ยวดาวน์โหลดแอปพลิเคชันรวมทั้งเปิดให้โรงแรม เริ่มใช้ระบบเอกซ์ทราเน็ต
-                    </div>
-                </div>
-                <div class="who-in-txt">
-                    <img src="../image/Vector 124.png" alt="">
-                    <div class="who-txt-2"> ฟรี ค่าบริการการใช้งานแพลตฟอร์ม</div>
-                </div>
-                <div class="who-in-txt">
-                    <img src="../image/Vector 124.png" alt="">
-                    <div class="who-txt-2"> ฟรี ค่าธรรมเนียมการทำธุรกรรม (Merchant fee)</div>
-                </div>
-                <div class="who-in-txt">
-                    <img src="../image/Vector 124.png" alt="">
-                    <div class="who-txt-2"> Aigent ทำการตลาดให้กับพาร์ตเนอร์ในทุกช่องทางโดยไม่คิดค่าใช้จ่าย
-                    </div>
+                    <div class="who-txt-2">ระบบบริหารจัดการหลังบ้านรูปแบบเดียวกับ OTAs</div>
                 </div>
             </div>
+
+            <div class="who-list">
+                <div class="who-in-txt">
+                    <img src="../image/Vector 124.png" alt="">
+                    <div class="who-txt-2">ฟรี ค่าคอมมิชชั่น และ ไม่มีค่าธรรมเนียมธุรกรรมออนไลน์</div>
+                </div>
+                <div class="who-in-txt">
+                    <img src="../image/Vector 124.png" alt="">
+                    <div class="who-txt-2">สามารถสร้างและกำหนดราคาเวาเชอร์ได้ด้วยตัวเอง</div>
+                </div>
+
+            </div>
+
+
 
         </div>
     </div>
@@ -157,8 +154,8 @@
             <b>เงื่อนไขการเข้าร่วม</b>
         </div>
         <div class="condition-txt">
-            มอบส่วนลด 50% สูงสุดไม่เกิน 3,000 บาทต่อคืนจากราคาขายเวาเชอร์ปกติสำหรับ Aigent Member Club อย่างน้อย 1 ห้อง/วัน
-            <br> (โรงแรมสามารถกำหนดจำนวนห้องสูงสุดต่อคืนได้) <br><br>
+            เพียงร่วมทำการตลาดกับเราโดยมอบส่วนลดให้กับ Aigent Member Club 50% <br> หรือไม่เกิน 3000 บาทต่อใบ เมื่อมีการซื้อที่พักของท่าน อย่างน้อย 5 ใบต่อเดือน เท่านั้น
+            <br>(โรงแรมสามารถกำหนดจำนวนการซื้อเวาเขอร์สูงสุดต่อเดือนได้) <br><br>
             <span>หมายเหตุ : เงื่อนไขเวาเชอร์เป็นไปตามที่โรงแรมกำหนด</span>
 
         </div>
@@ -179,10 +176,9 @@
             </div>
             <div class="phone-img">
                 <div class="phone-txt">
-                    <b>Buy Now</b>
+                    <b>ซื้อแบบรวมกลุ่ม</b>
                     <br>
-                    <span>Hotel can set the best deal voucher
-                    for early booker.</span>
+                    <span>เครื่องมือสร้างรายได้แบบรวมกลุ่มซื้อ แต่ไม่ต้องเข้าพักพร้อมกันได้</span>
                 </div>
                 <img src="../image/phone-2.png" class="phone-cap" alt="">
             </div>
@@ -220,7 +216,7 @@
     <div class="join_to_free">
         <h1>เข้าร่วมฟรี</h1>
         <div class="join-txt">
-            แพลตฟอร์ม Aigent วันนี้ค่าคอมมิชชั่น & ค่าธรรมเนียมการค้า
+            กับแพลตฟอร์ม Aigent วันนี้ ไม่มีค่าคอมมิชชั่น & ค่าธรรมเนียมธุรกรรมออนไลน์
         </div>
         <div class="join-btn">
             <button onclick="signup()" class="linear-btn con-btn">มาเป็นพันธมิตรกับเรา</button>

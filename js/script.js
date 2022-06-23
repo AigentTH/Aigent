@@ -14,6 +14,10 @@ function tw() {
     window.open("https://twitter.com/Aigent_corp");
 }
 
+function line() {
+    window.open("https://page.line.me/aigent");
+}
+
 function inst() {
     window.open("https://www.instagram.com/aigentcorporation/");
 }
